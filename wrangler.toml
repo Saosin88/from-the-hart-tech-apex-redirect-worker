@@ -9,7 +9,7 @@ crons = []
 [build]
 command = "npm run build"
 
-[[env.production.routes]]
+[[routes]]
 pattern = "fromthehart.tech"
 custom_domain = true
 
