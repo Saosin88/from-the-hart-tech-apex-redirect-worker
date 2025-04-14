@@ -1,0 +1,17 @@
+name = "from-the-hart-tech-apex-redirect-worker"
+main = "src/index.ts"
+compatibility_date = "2025-04-14"
+workers_dev = false
+
+[triggers]
+crons = []
+
+[build]
+command = "npm run build"
+
+[[env.production.routes]]
+pattern = "fromthehart.tech"
+custom_domain = true
+
+
+
